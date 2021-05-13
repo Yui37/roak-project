@@ -1,0 +1,33 @@
+/*base*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #747171;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.contents-main-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 200px auto 0;
+}
+
+.contents-sub-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin: 0 auto 150px;
+}
+/*base end*/

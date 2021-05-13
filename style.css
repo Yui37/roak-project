@@ -1,0 +1,505 @@
+@charset "UTF-8";
+.full-width-container {
+  width: 100%;
+  margin: 0;
+}
+
+.column-1 {
+  width: 8.333%;
+}
+
+.column-2 {
+  width: 16.667%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.333%;
+}
+
+.column-5 {
+  width: 41.667%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-7 {
+  width: 58.333%;
+}
+
+.column-8 {
+  width: 66.667%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.333%;
+}
+
+.column-11 {
+  width: 91.667%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #747171;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.contents-main-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: normal;
+  margin: 200px auto 0;
+}
+
+.contents-sub-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: normal;
+  margin: 0 auto 150px;
+}
+
+/*base end*/
+/*header*/
+.top-wrapper {
+  height: 800px;
+  background-image: url("images/roke-top.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.top-texts {
+  width: 70%;
+  margin: 130px 200px;
+  /*margin横これじゃないと四角が中心にこない*/
+  padding: 60px 0;
+  background-color: rgba(31, 30, 30, 0.2);
+  position: absolute;
+}
+
+.top-text {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sub-title {
+  font-size: 30px;
+}
+
+.sub-title p {
+  margin-top: 100px;
+}
+
+.main-title {
+  display: flex;
+  margin: 50px 218px;
+}
+
+.main-title h2 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+.main-title h1 {
+  font-size: 100px;
+  margin-left: 65px;
+  font-weight: normal;
+}
+
+.top-fas {
+  margin-top: 750px;
+  color: rgba(31, 30, 30, 0.2);
+  font-size: 40px;
+}
+
+/* ここからPC版のheader設定 */
+.menus {
+  display: flex;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.menu {
+  font-family: "Times New Roman", Times, serif;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  color: #747171;
+}
+
+.menu a:hover {
+  color: #1d1c1c;
+}
+
+.menu h1 {
+  font-size: 22px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+.menu p {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/* ここまでPC版のheader設定 */
+.posts {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.post {
+  text-align: left;
+  margin-right: 30px;
+}
+.post img {
+  width: 100%;
+}
+
+.post-category {
+  background-color: #A7D3A5;
+  border-radius: 5px;
+  font-size: 11px;
+  color: white;
+  font-weight: normal;
+  padding: 5px 10px;
+  width: 20%;
+  text-align: center;
+}
+
+.post-date {
+  font-weight: normal;
+  font-size: 10px;
+  margin: 5px 0;
+}
+
+.post-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.pagenation p {
+  margin-top: 85px;
+  letter-spacing: 10px;
+}
+
+.contents-sub-title {
+  margin: 0 auto 100px;
+}
+
+.blog-info {
+  font-size: 17px;
+}
+
+.blog-links {
+  display: flex;
+}
+
+.blog-link {
+  text-align: center;
+  margin: 50px auto;
+}
+.blog-link img {
+  /*ここのアイコンを正方形に統一したい*/
+  width: 20%;
+  height: 150px;
+  object-fit: cover;
+}
+.blog-link p {
+  font-size: 12px;
+}
+
+.concept-title-container {
+  background-image: url(images/alejandro-cartagena-B64B6-kAWlw-unsplash.jpg);
+  background-size: cover;
+  padding: 1px 10px 100px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.concept-title {
+  color: white;
+}
+
+.concept-main-text {
+  color: white;
+  font-size: 34px;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+.concept-sub-text {
+  font-weight: normal;
+  font-size: 15px;
+  margin: 20px auto;
+  line-height: 34px;
+}
+
+.concept-more {
+  background-color: rgba(231, 239, 233, 0.7);
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.more-btn {
+  color: #747171;
+}
+
+.more-btn:hover {
+  color: #1d1c1c;
+}
+
+.concept-fas {
+  margin-bottom: 20px;
+}
+
+.concept-content {
+  display: flex;
+}
+
+.concept-content-text {
+  height: 400px;
+  width: 50%;
+  padding-top: 100px;
+  line-height: 40px;
+}
+
+.concept-content-img {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+  align-content: center;
+}
+
+.concept-content-text h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 30px;
+}
+
+.service-title-container {
+  margin-top: 100px;
+  padding: 40px;
+  background-image: url(images/pongsawat-pasom-NG0olc0P3vI-unsplash.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.service-title-wrapper {
+  padding: 40px 0;
+}
+
+.service-title {
+  color: white;
+}
+
+.service-title-main {
+  margin: 20px 0 0;
+}
+
+.service-title-sub {
+  margin: 0 0 20px;
+}
+
+.item-list {
+  background-color: rgba(148, 177, 150, 0.8);
+  width: 45%;
+  margin: 0 auto 50px;
+  border-radius: 5px;
+  padding: 70px 0;
+}
+
+.item-list-title {
+  font-weight: normal;
+  font-size: 24px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.item-category h2 {
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.detaile {
+  background-color: rgba(231, 239, 233, 0.7);
+}
+
+.detaile-btn {
+  padding: 20px 30px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #747171;
+}
+
+.detaile-btn:hover {
+  color: #1d1c1c;
+}
+
+.detaile-btn h2 {
+  font-weight: normal;
+}
+
+.service-items-container {
+  text-align: center;
+}
+
+.item {
+  margin: 150px 50px;
+}
+
+.item-text {
+  margin-bottom: 60px;
+}
+
+.item-text-title h1 {
+  font-weight: normal;
+  font-size: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #747171;
+  margin-bottom: 60px;
+}
+.item-text-title p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  line-height: 32px;
+}
+
+.item-images {
+  display: flex;
+}
+
+.item-image img {
+  width: 20%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.title-location {
+  margin-top: 120px;
+}
+
+.roke-map {
+  width: 60%;
+}
+
+.location-texts {
+  font-size: 15px;
+  margin: 80px auto;
+  text-align: left;
+  width: 40%;
+}
+
+.location-texts h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.location-texts p {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #747171;
+  line-height: 40px;
+}
+
+.footer-wrapper {
+  background-color: #D2D9D4;
+  font-family: "Times New Roman", Times, serif;
+  padding: 80px 350px;
+}
+
+.shop-title {
+  text-align: left;
+}
+
+.shop-sub-title p {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.shop-main-title {
+  display: flex;
+  margin-top: 10px;
+}
+.shop-main-title h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-right: 70px;
+}
+.shop-main-title h1 {
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.menu-list {
+  text-align: left;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.menu-and-logo {
+  display: flex;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 40%;
+  margin-left: 340px;
+}
+
+.sns-icons {
+  display: flex;
+  margin: 130px 270px 50px;
+}
+
+.facebook p {
+  font-size: 16px;
+}
+
+.sns-icon {
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+.copyright {
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

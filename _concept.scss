@@ -1,0 +1,69 @@
+.concept-title-container {
+    background-image: url(images/alejandro-cartagena-B64B6-kAWlw-unsplash.jpg);
+    background-size: cover;
+    padding: 1px 10px 100px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.concept-title {
+    color: white;
+}
+
+.concept-main-text {
+    color: white;
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 100px;
+}
+
+.concept-sub-text {
+    font-weight: normal;
+    font-size: 15px;
+    margin: 20px auto;
+    line-height: 34px;
+}
+
+.concept-more {
+    background-color: rgb(231, 239, 233, 0.7);
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.more-btn {
+    color: #747171;
+}
+
+.more-btn:hover {
+    color: #1d1c1c;
+}
+
+.concept-fas {
+    margin-bottom: 20px;
+}
+
+.concept-content {
+    display: flex;
+}
+
+.concept-content-text {
+    height: 400px;
+    width: 50%;
+    padding-top: 100px;
+    line-height: 40px;
+}
+
+.concept-content-img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    align-content: center;
+}
+
+.concept-content-text h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 30px;
+
+}
