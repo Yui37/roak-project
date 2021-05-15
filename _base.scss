@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #747171;
+    color: $base-color;
+    letter-spacing: 1px;
 }
 
 a {
@@ -21,7 +22,8 @@ a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: normal;
-    margin: 200px auto 0;
+    margin: 150px auto 0;
+    text-align: center;
 }
 
 .contents-sub-title {
@@ -29,5 +31,6 @@ a {
     font-size: 23px;
     font-weight: normal;
     margin: 0 auto 150px;
+    text-align: center;
 }
 /*base end*/

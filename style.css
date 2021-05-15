@@ -61,6 +61,7 @@
 body {
   font-family: "Open Sans Condensed", sans-serif;
   color: #747171;
+  letter-spacing: 1px;
 }
 
 a {
@@ -75,7 +76,8 @@ a {
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
   font-weight: normal;
-  margin: 200px auto 0;
+  margin: 150px auto 0;
+  text-align: center;
 }
 
 .contents-sub-title {
@@ -83,13 +85,14 @@ a {
   font-size: 23px;
   font-weight: normal;
   margin: 0 auto 150px;
+  text-align: center;
 }
 
 /*base end*/
 /*header*/
 .top-wrapper {
   height: 800px;
-  background-image: url("images/roke-top.jpg");
+  background-image: url("images/wilsan-u-aiUIs74ejx8-unsplash.jpg");
   background-size: cover;
   text-align: center;
 }
@@ -129,7 +132,7 @@ a {
 
 .main-title h1 {
   font-size: 100px;
-  margin-left: 65px;
+  margin-left: 55px;
   font-weight: normal;
 }
 
@@ -171,7 +174,7 @@ li {
 
 .menu p {
   font-size: 16px;
-  margin-top: 0;
+  margin: 0 auto 30px;
 }
 
 /* ここまでPC版のheader設定 */
@@ -185,8 +188,16 @@ li {
   text-align: left;
   margin-right: 30px;
 }
-.post img {
+.post a {
+  color: #747171;
+}
+.post a img {
   width: 100%;
+  border-radius: 5px;
+}
+.post a:hover {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  color: #1d1c1c;
 }
 
 .post-category {
@@ -211,13 +222,16 @@ li {
   margin-bottom: 10px;
 }
 
-.pagenation p {
+.pagenation a {
+  color: #747171;
+}
+.pagenation a p {
   margin-top: 85px;
   letter-spacing: 10px;
 }
 
-.contents-sub-title {
-  margin: 0 auto 100px;
+.pagenation a:hover {
+  color: #1d1c1c;
 }
 
 .blog-info {
@@ -232,14 +246,24 @@ li {
   text-align: center;
   margin: 50px auto;
 }
-.blog-link img {
+.blog-link a {
+  color: #747171;
+}
+.blog-link a img {
   /*ここのアイコンを正方形に統一したい*/
-  width: 20%;
+  width: 21%;
   height: 150px;
   object-fit: cover;
+  border-radius: 50%;
 }
-.blog-link p {
+.blog-link a p {
   font-size: 12px;
+}
+.blog-link a:hover {
+  color: #1d1c1c;
+}
+.blog-link a:hover img {
+  box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
 }
 
 .concept-title-container {
@@ -270,21 +294,26 @@ li {
 
 .concept-more {
   background-color: rgba(231, 239, 233, 0.7);
-  padding-top: 30px;
-  font-size: 20px;
   text-align: center;
+}
+.concept-more a {
+  padding: 30px;
+  font-size: 20px;
 }
 
 .more-btn {
   color: #747171;
 }
+.more-btn h2 {
+  font-weight: normal;
+  font-size: 27px;
+}
+.more-btn p {
+  font-size: 16px;
+}
 
 .more-btn:hover {
   color: #1d1c1c;
-}
-
-.concept-fas {
-  margin-bottom: 20px;
 }
 
 .concept-content {
@@ -359,6 +388,7 @@ li {
 
 .detaile {
   background-color: rgba(231, 239, 233, 0.7);
+  text-align: center;
 }
 
 .detaile-btn {
@@ -441,7 +471,13 @@ li {
 .footer-wrapper {
   background-color: #D2D9D4;
   font-family: "Times New Roman", Times, serif;
-  padding: 80px 350px;
+  padding: 45px 0;
+}
+
+.footer-container {
+  width: 65%;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .shop-title {
@@ -480,12 +516,19 @@ li {
 
 .logo {
   width: 40%;
-  margin-left: 340px;
+  margin-left: 450px;
 }
 
 .sns-icons {
   display: flex;
-  margin: 130px 270px 50px;
+  width: 20%;
+  margin: 100px auto 50px;
+}
+.sns-icons a {
+  color: #747171;
+}
+.sns-icons a:hover {
+  color: #1d1c1c;
 }
 
 .facebook p {
@@ -497,9 +540,204 @@ li {
   margin: 0 20px;
 }
 
-.copyright {
-  font-size: 15px;
-  padding-top: 50px;
+.single-page-top-wrapper {
+  height: 200px;
+  background-image: url(images/wilsan-u-aiUIs74ejx8-unsplash.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.single-page-top-texts {
+  margin: 9px 430px;
+  /*margin横これじゃないと四角が中心にこない*/
+  background-color: rgba(31, 30, 30, 0.2);
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.singe-page-top-text {
+  color: white;
+}
+
+.single-page-sub-title {
+  font-size: 18px;
+}
+.single-page-sub-title p {
+  margin-top: 25px;
+}
+
+.single-page-main-title {
+  display: flex;
+  margin: 15px 120px;
+}
+.single-page-main-title h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 26px 0;
+}
+.single-page-main-title h1 {
+  font-size: 67px;
+  margin-left: 30px;
+  font-weight: normal;
+}
+
+.single-contents-main-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: normal;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.single-contents-sub-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: normal;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.return-to-toppage {
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.return-to-toppage:hover {
+  color: #1d1c1c;
+}
+
+.single-news-main {
+  display: flex;
+}
+
+.single-post {
+  margin: 50px 100px;
+}
+.single-post img {
+  border-radius: 10px;
+}
+
+.single-post-category {
+  background-color: #A7D3A5;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  padding: 5px 10px;
+  width: 20%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.post-tags {
+  display: flex;
+  margin-bottom: 30px;
+}
+.post-tags p {
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.post-tag {
+  background-color: #b1b190;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+.single-post-date {
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.single-post-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.single-post-content {
+  font-size: 18px;
+}
+
+.like-btn {
+  background-color: #1877cf;
+  width: 10%;
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  margin: 100px 0;
+}
+.like-btn i {
+  color: #c21d1d;
+}
+.like-btn p {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.side-bar {
+  padding: 0 70px;
+}
+
+.side-bar-title {
+  margin: 50px 0;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.side-bar-title h2 {
+  font-weight: normal;
+}
+
+.side-bar-content {
+  margin-bottom: 70px;
+}
+.side-bar-content a {
+  color: #747171;
+}
+
+.side-bar-content a:hover {
+  color: #1d1c1c;
+  box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
+}
+
+.side-content-img {
+  width: 100%;
+}
+
+.side-content-text p {
+  font-size: 12px;
+}
+
+.side-post-title {
+  font-size: 14px;
+}
+
+.side-bar-blog-link {
+  text-align: center;
+  margin: 150px auto 100px;
+}
+
+.side-blog-link a img {
+  width: 55%;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.side-blog-link a p {
+  color: #747171;
+  font-size: 14px;
+}
+
+.side-blog-link a:hover {
+  color: #1d1c1c;
+}
+.side-blog-link a:hover img {
+  box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

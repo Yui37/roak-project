@@ -1,7 +1,13 @@
 .footer-wrapper {
     background-color: #D2D9D4;
     font-family: 'Times New Roman', Times, serif;
-    padding: 80px 350px;
+    padding: 45px 0;
+}
+
+.footer-container {
+    width: 65%;
+    margin: 30px auto;
+    text-align: center;
 }
 
 .shop-title {
@@ -42,12 +48,21 @@
 
 .logo {
     width: 40%;
-    margin-left: 340px;
+    margin-left: 450px;
 }
 
 .sns-icons {
     display: flex;
-    margin: 130px 270px 50px
+    width: 20%;
+    margin: 100px auto 50px;
+
+    a {
+        color: $base-color;
+    }
+
+    a:hover {
+        color: $hover-color;
+    }
 }
 
 .facebook p {
@@ -57,9 +72,4 @@
 .sns-icon {
     font-size: 30px;
     margin: 0 20px;
-}
-
-.copyright {
-    font-size: 15px;
-    padding-top: 50px;
 }

@@ -1,7 +1,7 @@
 /*header*/
 .top-wrapper {
     height: 800px;
-    background-image: url("images/roke-top.jpg");
+    background-image: url("images/wilsan-u-aiUIs74ejx8-unsplash.jpg");
     background-size: cover;
     text-align: center;
   }
@@ -41,7 +41,7 @@
 
 .main-title h1 {
     font-size: 100px;
-    margin-left: 65px;
+    margin-left: 55px;
     font-weight: normal;
 }
 
@@ -68,11 +68,11 @@ li {
 }
 
 .menu a {
-    color: #747171;
+    color: $base-color;
 }
 
 .menu a:hover {
-    color: #1d1c1c;
+    color: $hover-color;
 }
 
 .menu h1 {
@@ -83,7 +83,7 @@ li {
 
 .menu p {
     font-size: 16px;
-    margin-top: 0;
+    margin: 0 auto 30px;
 }
 
 /* ここまでPC版のheader設定 */

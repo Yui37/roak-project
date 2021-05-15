@@ -8,8 +8,17 @@
     text-align: left;
     margin-right: 30px;
 
-    img {
-        width: 100%;
+    a {
+        color: $base-color;
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    a:hover {
+        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+        color: $hover-color;
     }
 }
 
@@ -35,13 +44,17 @@
     margin-bottom: 10px;
 }
 
-.pagenation p {
-    margin-top: 85px;
-    letter-spacing: 10px;
+.pagenation a {
+    color: $base-color;
+
+    p {
+        margin-top: 85px;
+        letter-spacing: 10px;
+    }
 }
 
-.contents-sub-title {
-    margin: 0 auto 100px;
+.pagenation a:hover {
+    color: $hover-color;
 }
 
 .blog-info {
@@ -57,13 +70,27 @@
     text-align: center;
     margin: 50px auto;
 
-    img {/*ここのアイコンを正方形に統一したい*/
-        width: 20%;
-        height: 150px;
-        object-fit: cover;
+    a {
+        color: $base-color;
+
+        img {/*ここのアイコンを正方形に統一したい*/
+            width: 21%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
 
-    p {
-        font-size: 12px;
+    a:hover {
+        color: $hover-color;
+
+        img {
+            box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
+        }
     }
+
 }
