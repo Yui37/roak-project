@@ -30,8 +30,12 @@
 
     a {
         padding: 30px;
-        font-size: 20px;
+        color: #747171;
     }
+}
+
+.concept-more:hover {
+    background-color: rgb(219, 224, 149);
 }
 
 .more-btn {
@@ -39,7 +43,6 @@
 
     h2 {
         font-weight: normal;
-        font-size: 27px;
     }
 
     p {
@@ -48,7 +51,8 @@
 }
 
 .more-btn:hover {
-    color: #1d1c1c;
+    color: $hover-color;
+    text-shadow: $hover-shadow;
 }
 
 .concept-content {
@@ -58,8 +62,9 @@
 .concept-content-text {
     height: 400px;
     width: 50%;
-    padding-top: 100px;
+    padding-top: 75px;
     line-height: 40px;
+    text-align: center;
 }
 
 .concept-content-img {

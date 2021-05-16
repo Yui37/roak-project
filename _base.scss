@@ -10,7 +10,10 @@ body {
     letter-spacing: 1px;
 }
 
-a {
+.text-underline-hover {
+    text-decoration: none;
+}
+.text-underline-hover:hover {
     text-decoration: none;
 }
 
