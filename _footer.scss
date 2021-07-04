@@ -1,78 +1,138 @@
-.footer-wrapper {
-    background-color: #D2D9D4;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 45px 0;
+@media (min-width: 320px) {
+    .footer-wrapper {
+        background-color: #D2D9D4;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 25px;
+    }
+
+    .footer-container {
+        width: 90%;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .shop-title {
+        text-align: left;
+    }
+
+    .shop-sub-title p {
+        font-size: 14px;
+        margin: 20px 0 0;
+    }
+
+    .shop-main-title {
+        margin: 10px 0;
+
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        h1{
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+
+    .menu-list {
+        margin: 10px 0;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .menu-and-logo {
+        display: flex;
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .logo {
+        width: 47%;
+        position: absolute;
+        right: 0;
+    }
+
+    .sns-icons {
+        display: flex;
+        width: 100%;
+        margin: 50px 50px 30px;
+
+        a {
+            color: $base-color;
+        }
+
+        a:hover {
+            color: $hover-color;
+            text-shadow: 0px 2px 2px #555454;
+        }
+    }
+
+    .facebook p {
+        font-size: 12px;
+    }
+
+    .sns-icon {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
 }
+@media (min-width: 768px) {
+    .footer-wrapper {
+        padding: 45px 0;
+    }
 
-.footer-container {
-    width: 65%;
-    margin: 30px auto;
-    text-align: center;
-}
+    .footer-container {
+        width: 65%;
+    }
 
-.shop-title {
-    text-align: left;
-}
+    .shop-sub-title p {
+        font-size: 20px;
+        margin: 30px 0;
+    }
 
-.shop-sub-title p {
-    font-size: 20px;
-    margin: 30px 0;
-}
+    .shop-main-title {
+        display: flex;
+        margin-top: 10px;
 
-.shop-main-title {
-    display: flex;
-    margin-top: 10px;
+        h2 {
+            font-size: 30px;
+            margin-right: 70px;
+        }
 
-    h2 {
+        h1{
+            font-size: 60px;
+        }
+    }
+
+    .menu-list {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .menu-and-logo {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .sns-icons {
+        width: 20%;
+        margin: 100px auto 50px;
+    }
+
+    .facebook p {
+        font-size: 16px;
+    }
+
+    .sns-icon {
         font-size: 30px;
-        font-weight: normal;
-        margin-right: 70px;
+        margin: 0 20px;
     }
-
-    h1{
-        font-size: 60px;
-        font-weight: normal;
-    }
-}
-
-.menu-list {
-    text-align: left;
-    font-size: 20px;
-    line-height: 50px;
-}
-
-.menu-and-logo {
-    display: flex;
-    margin-top: 30px;
-    position: relative;
-}
-
-.logo {
-    width: 40%;
-    position: absolute;
-    right: 0;
-}
-
-.sns-icons {
-    display: flex;
-    width: 20%;
-    margin: 100px auto 50px;
-
-    a {
-        color: $base-color;
-    }
-
-    a:hover {
-        color: $hover-color;
-        text-shadow: 0px 2px 2px #555454;
-    }
-}
-
-.facebook p {
-    font-size: 16px;
-}
-
-.sns-icon {
-    font-size: 30px;
-    margin: 0 20px;
 }

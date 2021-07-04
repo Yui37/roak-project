@@ -43,7 +43,7 @@ h1, h2, p{
         padding: 16px;
         color: $base-color;
         border: none;
-        border-radius: 20px;
+        border-radius: 10px;
         transition: all 0.3s;
         h2 {
             font-weight: normal;
@@ -57,7 +57,7 @@ h1, h2, p{
             background-color: #cbd2cb8a;
             letter-spacing: 3px;
             color: white;
-            width: 350px;
+            width: 250px;
         }
     }
 }
@@ -75,5 +75,11 @@ h1, h2, p{
     .contents-sub-title {
         font-size: 23px;
         margin: 0 auto 100px;
+    }
+    button{
+        border-radius: 20px;
+        &:hover {
+            width: 350px;
+        }
     }
 }

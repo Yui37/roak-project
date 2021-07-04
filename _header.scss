@@ -195,24 +195,24 @@
         width: 70%;
         background-color: rgba(31, 30, 30, 0.2);
         position: absolute;
-        top: 35%;
+        top: 25%;
         left: 15%;
         text-align: center;
         color: white;
         font-family: "Times New Roman", Times, serif;
         p {
-            font-size:17px;
+            font-size:14px;
             padding-top: 70px;
         }
         h2 {
-            font-size: 23px;
+            font-size: 28px;
             font-weight: normal;
-            margin: 15px auto 12px;
+            margin: 35px auto 12px;
         }
         h1 {
-            font-size: 42px;
+            font-size: 45px;
             font-weight: normal;
-            padding-bottom: 40px;
+            padding-bottom: 50px;
         }
     }
 }
@@ -233,6 +233,7 @@
                     width: 20%;
                     text-align: center;
                     margin: 30px;
+                    font-size: 20px;
                     a {
                         color: $base-color;
                     }
