@@ -1,7 +1,11 @@
-/*base*/
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
 }
 
 body {
@@ -10,30 +14,66 @@ body {
     letter-spacing: 1px;
 }
 
-.text-underline-hover {
-    text-decoration: none;
-}
-.text-underline-hover:hover {
+a {
     text-decoration: none;
 }
 
-.container {
-    text-align: center;
+h1, h2, p{
+    margin: 0;
 }
 
-.contents-main-title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-weight: normal;
-    margin: 150px auto 0;
-    text-align: center;
+@media (min-width: 320px) {
+    .contents-main-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        text-align: center;
+        font-size: 27px;
+        margin: 100px auto 0;
+    }
+    .contents-sub-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+
+    button{
+        background-color: rgba(231, 239, 233, 0.7);
+        padding: 16px;
+        color: $base-color;
+        border: none;
+        border-radius: 20px;
+        transition: all 0.3s;
+        h2 {
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        &:hover {
+            background-color: #cbd2cb8a;
+            letter-spacing: 3px;
+            color: white;
+            width: 350px;
+        }
+    }
 }
 
-.contents-sub-title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 23px;
-    font-weight: normal;
-    margin: 0 auto 150px;
-    text-align: center;
+@media (min-width: 768px) {
+    .container {
+        text-align: center;
+    }
+
+    .contents-main-title {
+        font-size: 50px;
+        margin: 150px auto 0;
+    }
+
+    .contents-sub-title {
+        font-size: 23px;
+        margin: 0 auto 100px;
+    }
 }
-/*base end*/

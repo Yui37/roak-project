@@ -44,11 +44,13 @@
 .menu-and-logo {
     display: flex;
     margin-top: 30px;
+    position: relative;
 }
 
 .logo {
     width: 40%;
-    margin-left: 450px;
+    position: absolute;
+    right: 0;
 }
 
 .sns-icons {

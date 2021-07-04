@@ -1,29 +1,26 @@
-.service-title-container {
-    margin-top: 100px;
-    padding: 40px;
-    background-image: url(images/pongsawat-pasom-NG0olc0P3vI-unsplash.jpg);
+.service-wrapper {
+    background-image: url("images/pongsawat-pasom-NG0olc0P3vI-unsplash.jpg");
     background-size: cover;
+    margin-top: 100px;
+    padding: 50px;
     text-align: center;
 }
 
 .service-title-wrapper {
     padding: 40px 0;
-}
-
-.service-title {
     color: white;
 }
 
 .service-title-main {
-    margin: 20px 0 0;
+    margin: 50px 0 0;
 }
 
 .service-title-sub {
-    margin: 0 0 20px;
+    margin: 0 0 80px;
 }
 
 .item-list {
-    background-color: rgb(148, 177, 150, 0.8);
+    background-color: rgba(148, 177, 150, 0.8);
     width: 45%;
     margin: 0 auto 50px;
     border-radius: 5px;
@@ -32,41 +29,23 @@
 
 .item-list-title {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 34px;
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 85px;
 }
 
-.item-category h2 {
-    font-weight: normal;
-    font-size: 18px;
-    color: white;
-    margin-bottom: 20px;
+.item-category {
+    margin-bottom: 100px;
+    h2 {
+        font-weight: normal;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 30px;
+    }
 }
 
 .detaile {
-    background-color: rgb(231, 239, 233, 0.7);
-    text-align: center;
-}
-
-.detaile:hover {
-    background-color: rgb(219, 224, 149);
-}
-
-.detaile-btn {
-    padding: 20px 30px;
-    border-radius: 3px;
-    font-size: 16px;
-    color: #747171;
-}
-
-.detaile-btn:hover {
-    color: $hover-color;
-    text-shadow: $hover-shadow;
-}
-
-.detaile-btn h2 {
-    font-weight: normal;
+    padding: 10px;
 }
 
 .service-items-container {
@@ -85,14 +64,14 @@
 
     h1 {
         font-weight: normal;
-        font-size: 30px;
+        font-size: 25px;
         padding-bottom: 30px;
         border-bottom: 1px solid #747171;
         margin-bottom: 60px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 50px;
         line-height: 32px;
     }
@@ -100,10 +79,9 @@
 
 .item-images {
     display: flex;
-}
-
-.item-image img {
-    width: 20%;
-    height: 250px;
-    object-fit: cover;
+    img {
+        width: 50%;
+        height: 250px;
+        object-fit: cover;
+    }
 }

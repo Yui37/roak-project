@@ -4,4 +4,14 @@ $hover-color: #b3b4b2;
 
 $hover-shadow: 0 2px 0 #555454;
 
-$base-background-color: #DF7861;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$cWhite: white;
+$cBlack: black;
