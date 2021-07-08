@@ -31,6 +31,14 @@
         }
     }
 
+    .post-pic img {
+        border-radius: 20px;
+        width: 80%;
+        height: 400px;
+        object-fit: cover;
+        margin: 0px 150px;
+    }
+
     .post-category {
         background-color: #A7D3A5;
         border-radius: 5px;

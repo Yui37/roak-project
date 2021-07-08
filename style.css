@@ -137,6 +137,10 @@ h1, h2, p {
   }
 }
 @media (min-width: 320px) {
+  .all-wrapper {
+    overflow: hidden;
+  }
+
   .nomal-menu {
     display: none;
     position: fixed;
@@ -462,6 +466,14 @@ h1, h2, p {
   }
   .post a:hover .blog-pic {
     width: 100%;
+  }
+
+  .post-pic img {
+    border-radius: 20px;
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0px 150px;
   }
 
   .post-category {
@@ -1055,14 +1067,14 @@ h1, h2, p {
   }
 }
 .single-page-top-wrapper {
-  height: 200px;
+  height: 300px;
   background-image: url(images/wilsan-u-aiUIs74ejx8-unsplash.jpg);
   background-size: cover;
   text-align: center;
 }
 
 .single-page-top-texts {
-  margin: 9px 430px;
+  margin: 111px 430px;
   /*margin横これじゃないと四角が中心にこない*/
   background-color: rgba(31, 30, 30, 0.2);
   position: absolute;
@@ -1124,7 +1136,7 @@ h1, h2, p {
 .single-post {
   margin: 50px 100px;
 }
-.single-post img {
+.single-post .single-post-pic {
   border-radius: 10px;
 }
 
@@ -1144,12 +1156,9 @@ h1, h2, p {
   display: flex;
   margin-bottom: 30px;
 }
-.post-tags p {
+.post-tags a {
   margin-top: 30px;
   margin-right: 10px;
-}
-
-.post-tag {
   background-color: #b1b190;
   padding: 5px 10px;
   font-size: 18px;
