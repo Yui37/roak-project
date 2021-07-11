@@ -46,6 +46,7 @@
         right: 0;
         top: 0;
         margin: 15px 18px;
+        position: fixed;
     }
 
     /*チェックボックス等は非表示に*/
@@ -68,7 +69,7 @@
         height: 3px;/*線の太さ*/
         width: 35px;/*長さ*/
         border-radius: 3px;
-        background: white;/*線の色*/
+        background: rgb(162 165 162);
         display: block;
         content: '';
         cursor: pointer;
@@ -109,10 +110,16 @@
         transition: .3s ease-in-out;
         -webkit-transform: translateX(-105%);
         transform: translateX(105%);
-        line-height: 85px;
+        line-height: 50px;
         text-align: center;
         ul {
             padding-left: 0;
+            li {
+                margin-top: 25px;
+                a > h1 {
+                    font-size: 20px;
+                }
+            }
         }
     }
 
@@ -204,7 +211,7 @@
         color: white;
         font-family: "Times New Roman", Times, serif;
         p {
-            font-size:14px;
+            font-size: 14px;
             padding-top: 70px;
         }
         h2 {
@@ -235,8 +242,7 @@
                     font-family: "Times New Roman", Times, serif;
                     width: 20%;
                     text-align: center;
-                    margin: 30px;
-                    font-size: 20px;
+                    margin: 15px;
                     a {
                         color: $base-color;
                     }
@@ -245,7 +251,7 @@
                         text-shadow: $hover-shadow;
                     }
                     h1 {
-                        font-size: 22px;
+                        font-size: 18px;
                         font-weight: normal;
                     }
                     p {
@@ -270,7 +276,7 @@
         overflow: hidden;
         img {
             object-fit: cover;
-            height: 900px;
+            height: 800px;
         }
     }
 
@@ -278,7 +284,7 @@
         width: 70%;
         background-color: rgba(31, 30, 30, 0.2);
         position: absolute;
-        top: 35%;
+        top: 30%;
         left: 15%;
         text-align: center;
         color: white;

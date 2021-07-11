@@ -12,22 +12,32 @@
                     </div>
                     <div class="menu-and-logo">
                         <div class="menu-list">
-                            <p>ホーム</p>
-                            <p>お知らせ</p>
-                            <p>コンセプト</p>
-                            <p>お取り扱い</p>
-                            <p>店舗案内</p>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                <p>ホーム</p>
+                            </a>
+                            <a href="#news-event-from-footer">
+                                <p>お知らせ</p>
+                            </a>
+                            <a href="#concept-from-footer">
+                                <p>コンセプト</p>
+                            </a>
+                            <a href="#service-from-footer">
+                                <p>お取り扱い</p>
+                            </a>
+                            <a href="#location-from-footer">
+                                <p>店舗案内</p>
+                            </a>
                         </div>
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/20210501_173253_983.jpg " class="logo">
                     </div>
                     <div class="sns-icons">
-                        <a href="#"><i class="fab fa-instagram sns-icon instagram"></i></a>
+                        <a href="https://www.instagram.com/zadkiel.555" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram sns-icon instagram"></i></a>
                         <div class="facebook owner-facebook">
-                            <a href="#"><i class="fab fa-facebook-f sns-icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100055601942179" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f sns-icon"></i></a>
                             <p>Owner</p>
                         </div>
                         <div class="facebook kaori-facebook">
-                            <a href="#"><i class="fab fa-facebook-f sns-icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100011168013874" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f sns-icon"></i></a>
                             <p>Kaori</p>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
     .service-wrapper {
         background-image: url("images/pongsawat-pasom-NG0olc0P3vI-unsplash.jpg");
         background-size: cover;
-        margin-top: 100px;
+        margin-top: 50px;
         padding: 50px;
         text-align: center;
     }
@@ -31,17 +31,17 @@
     .item-list-title {
         font-weight: normal;
         font-size: 23px;
-        color: white;
         padding-bottom: 50px;
+        color: white;
     }
 
     .item-category {
         margin-bottom: 50px;
         h2 {
             font-weight: normal;
-            font-size: 14px;
-            color: white;
             margin-bottom: 12px;
+            color: white;
+            font-size: 12px;
         }
     }
 
@@ -75,10 +75,11 @@
     .item-text-title {
 
         h1 {
+            color: white;
             font-weight: normal;
             font-size: 17px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #747171;
+            border-bottom: 1px solid white;
             margin-bottom: 30px;
         }
 
@@ -108,24 +109,24 @@
     }
 
     .service-title-sub {
-        margin: 0 0 80px;
+        margin: 0 0 30px;
     }
 
     .item-list {
         width: 70%;
-        padding: 150px 0;
+        padding: 50px 0;
+        border-radius: 20px;
     }
 
     .item-list-title {
         font-size: 34px;
-        padding-bottom: 85px;
+        padding-bottom: 50px;
     }
 
     .item-category {
-        margin-bottom: 100px;
         h2 {
             font-size: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 

@@ -39,6 +39,12 @@
         text-align: left;
         font-size: 14px;
         line-height: 20px;
+        a {
+            color: $base-color;
+        }
+        a:hover {
+            color: white;
+        }
     }
 
     .menu-and-logo {

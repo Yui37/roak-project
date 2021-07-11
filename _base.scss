@@ -54,9 +54,9 @@ h1, h2, p{
         }
 
         &:hover {
-            background-color: #cbd2cb8a;
+            background-color: rgba(231, 239, 233, 0.7);
             letter-spacing: 3px;
-            color: white;
+            color: rgb(56, 112, 73);
             width: 250px;
         }
     }
@@ -68,12 +68,12 @@ h1, h2, p{
     }
 
     .contents-main-title {
-        font-size: 50px;
+        font-size: 40px;
         margin: 150px auto 0;
     }
 
     .contents-sub-title {
-        font-size: 23px;
+        font-size: 20px;
         margin: 0 auto 100px;
     }
     button{

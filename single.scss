@@ -1,13 +1,13 @@
 @media (min-width: 320px) {
     .single-page-top-wrapper {
-        height: 70px;
+        height: 100px;
         background-image: url(images/wilsan-u-aiUIs74ejx8-unsplash.jpg);
         background-size: cover;
         text-align: center;
     }
 
     .single-page-top-texts {
-        margin: 111px 430px;
+        margin: 14px 82px;
         /*margin横これじゃないと四角が中心にこない*/
         background-color: rgba(31, 30, 30, 0.2);
         position: absolute;
@@ -16,89 +16,95 @@
     }
 
     .single-page-sub-title {
-        font-size: 18px;
+        font-size: 9px;
 
         p {
-            margin-top: 25px;
+            margin-top: 11px;
         }
     }
 
     .single-page-main-title {
-        display: flex;
-        margin: 15px 120px;
+        margin: 0px 50px;
 
         h2 {
-            font-size: 30px;
+            font-size: 12px;
             font-weight: normal;
-            margin: 26px 0;
+            margin: 4px 0;
         }
 
         h1 {
-            font-size: 67px;
-            margin-left: 30px;
+            font-size: 20px;
             font-weight: normal;
         }
     }
 
     .single-contents-main-title{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 50px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
         font-weight: normal;
-        margin: 100px auto 0;
+        margin: 50px auto 0;
         text-align: center;
     }
 
     .single-contents-sub-title {
         font-family: 'Times New Roman', Times, serif;
-        font-size: 23px;
+        font-size: 12px;
         font-weight: normal;
-        margin: 0 auto 100px;
+        margin: 0 auto;
         text-align: center;
     }
 
     .return-to-toppage {
-        margin-left: 100px;
+        margin: 50px 30px;
         cursor: pointer;
+        font-size: 12px;
     }
 
     .return-to-toppage:hover {
         color: $hover-color;
     }
 
-    .single-news-main {
-        display: flex;
-    }
-
     .single-post {
-        margin: 50px 100px;
+        padding: 50px 50px;
 
         .single-post-pic {
             border-radius: 10px;
         }
     }
-
-    .single-post-category {
-        background-color: #A7D3A5;
-        border-radius: 5px;
-        font-size: 18px;
-        color: white;
-        font-weight: normal;
-        padding: 5px 10px;
-        width: 20%;
-        margin-top: 30px;
-        text-align: center;
+    .single-post-pic {
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: 20px 0;
+        }
     }
 
-    .post-tags {
-        display: flex;
-        margin-bottom: 30px;
+    .single-post-category {
+        a {
+            background-color: #A7D3A5;
+            border-radius: 5px;
+            font-size: 12px;
+            color: white;
+            font-weight: normal;
+            padding: 3px 5px;
+            width: 33%;
+            margin-top: 18px;
+            text-align: center;
+        }
+    }
+
+    .single-post-tags {
+        margin-bottom: 10px;
 
         a {
             margin-top: 30px;
-            margin-right: 10px;
+            margin: 10px 0px;
+            /* margin-right: 10px; */
             background-color: #b1b190;
-            padding: 5px 10px;
-            font-size: 18px;
+            padding: 4px 5px;
+            font-size: 11px;
             color: white;
             font-weight: normal;
             border-radius: 5px;
@@ -107,13 +113,12 @@
 
     .single-post-date {
         font-weight: normal;
-        font-size: 18px;
-        margin-bottom: 30px;
+        font-size: 12px;
+        margin-bottom: 20px;
     }
 
     .single-post-title {
-        font-size: 32px;
-        margin-bottom: 30px;
+        font-size: 20px;
     }
 
     .single-post-content {
@@ -121,12 +126,12 @@
     }
 
     .like-btn {
-        background-color: rgb(24, 119, 207);
-        width: 10%;
-        padding: 10px;
+        background-color: #1877cf;
+        width: 32%;
+        font-size: 12px;
         display: flex;
         border-radius: 5px;
-        margin: 100px 0;
+        margin: 50px 0;
 
         i {
             color: rgb(194, 29, 29);
@@ -138,13 +143,16 @@
             margin-left: 10px;
         }
     }
+    .like-icon {
+        margin: 2px 0px 2px 5px;
+    }
 
-    .side-bar {
+    .sidebar {
         padding: 0 70px;
     }
 
 
-    .side-bar-title {
+    .sidebar-title {
         margin: 50px 0;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
@@ -154,16 +162,15 @@
         }
     }
 
-    .side-bar-content {
+    .sidebar-content {
         margin-bottom: 70px;
         a {
             color: $base-color;
         }
     }
 
-    .side-bar-content a:hover {
+    .sidebar-content a:hover {
         color: $hover-color;
-        box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
     }
 
     .side-content-img {
@@ -178,7 +185,7 @@
         font-size: 14px;
     }
 
-    .side-bar-blog-link {
+    .sidebar-blog-link {
         text-align: center;
         margin: 150px auto 100px;
     }
@@ -206,14 +213,14 @@
 }
 @media (min-width: 768px) {
     .single-page-top-wrapper {
-        height: 70px;
+        height:200px;
         background-image: url(images/wilsan-u-aiUIs74ejx8-unsplash.jpg);
         background-size: cover;
         text-align: center;
     }
 
     .single-page-top-texts {
-        margin: 111px 430px;
+        margin: 15px 421px;
         /*margin横これじゃないと四角が中心にこない*/
         background-color: rgba(31, 30, 30, 0.2);
         position: absolute;
@@ -248,23 +255,24 @@
 
     .single-contents-main-title{
         font-family: 'Times New Roman', Times, serif;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: normal;
-        margin: 100px auto 0;
+        margin: 50px auto 0;
         text-align: center;
     }
 
     .single-contents-sub-title {
         font-family: 'Times New Roman', Times, serif;
-        font-size: 23px;
+        font-size: 20px;
         font-weight: normal;
-        margin: 0 auto 100px;
+        margin: 0 auto;
         text-align: center;
     }
 
     .return-to-toppage {
         margin-left: 100px;
         cursor: pointer;
+        font-size: 15px;
     }
 
     .return-to-toppage:hover {
@@ -276,35 +284,36 @@
     }
 
     .single-post {
-        margin: 50px 100px;
+        padding: 100px 100px;
 
         .single-post-pic {
             border-radius: 10px;
         }
     }
-
     .single-post-category {
-        background-color: #A7D3A5;
-        border-radius: 5px;
-        font-size: 18px;
-        color: white;
-        font-weight: normal;
-        padding: 5px 10px;
-        width: 20%;
-        margin-top: 30px;
-        text-align: center;
+        a {
+            background-color: #A7D3A5;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+            font-weight: normal;
+            padding: 5px 10px;
+            width: 20%;
+            margin-top: 30px;
+            text-align: center;
+        }
     }
 
-    .post-tags {
+    .single-post-tags {
         display: flex;
         margin-bottom: 30px;
 
         a {
-            margin-top: 30px;
+            margin-top: 12px;
             margin-right: 10px;
             background-color: #b1b190;
             padding: 5px 10px;
-            font-size: 18px;
+            font-size: 16px;
             color: white;
             font-weight: normal;
             border-radius: 5px;
@@ -319,38 +328,28 @@
 
     .single-post-title {
         font-size: 32px;
-        margin-bottom: 30px;
+    }
+
+    .single-post-pic img {
+        width: 70%;
+        height: 400px;
     }
 
     .single-post-content {
         font-size: 18px;
     }
-
-    .like-btn {
-        background-color: rgb(24, 119, 207);
-        width: 10%;
-        padding: 10px;
-        display: flex;
-        border-radius: 5px;
-        margin: 100px 0;
-
-        i {
-            color: rgb(194, 29, 29);
-        }
-
-        p {
-            color: white;
-            font-size: 16px;
-            margin-left: 10px;
-        }
-    }
-
-    .side-bar {
+    //いいねボタンの色変更
+    // .wpulike-default .wp_ulike_btn {
+    //     background-color: rgb(24, 119, 207);
+    //     min-height: 30px;
+    //     min-width: 50px;
+    // }
+    .sidebar {
         padding: 0 70px;
     }
 
 
-    .side-bar-title {
+    .sidebar-title {
         margin: 50px 0;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
@@ -360,16 +359,15 @@
         }
     }
 
-    .side-bar-content {
+    .sidebar-content {
         margin-bottom: 70px;
         a {
             color: $base-color;
         }
     }
 
-    .side-bar-content a:hover {
+    .sidebar-content a:hover {
         color: $hover-color;
-        box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
     }
 
     .side-content-img {
@@ -384,7 +382,7 @@
         font-size: 14px;
     }
 
-    .side-bar-blog-link {
+    .sidebar-blog-link {
         text-align: center;
         margin: 150px auto 100px;
     }
@@ -406,7 +404,7 @@
         color: $hover-color;
 
         img {
-            box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
+            box-shadow: 12px 12px 2px 1px rgba(56, 139, 49, 0.2);
         }
     }
 }
