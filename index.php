@@ -6,6 +6,7 @@
         <meta name="description" content="import shop in Higashihiroshima">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
         <link rel="stylesheet" href="http://loak.local/wp-content/themes/roak-project/style.css" type="text/css">
         <script src="https://kit.fontawesome.com/779dc48fa9.js" crossorigin="anonymous"></script>
         <?php wp_head(); ?>
@@ -28,42 +29,66 @@
             <a id="news-event-from-footer"></a>
             <a id="news-event-title"></a>
             <main>
-            <div class="news-wrapper">
+                <div class="news-wrapper">
                     <div class="container">
                         <h1 class="contents-main-title">News & Event</h1>
                         <h2 class="contents-sub-title">お知らせ</h2>
-                        <div class="posts-container">
-                            <div class="posts">
-                            <?php while (have_posts()) : the_post(); ?>
-                                <a href="<?php the_permalink(); ?>">
-                                    <div class="post">
-                                        <div class="post-pic">
-                                        <?php the_post_thumbnail(); ?>
-                                        </div>
-                                        <div class="post-category">
-                                            <?php the_category(' '); ?>
-                                        </div>
-                                        <div class="post-tags">
-                                            <?php the_tags(' ', '  '); ?>
-                                        </div>
-                                        <h2 class="post-date"><?php the_time('F.d.Y'); ?></h2>
-                                        <h1 class="post-title"><?php the_title(); ?></h1>
-                                        <P class="post-content"><?php echo mb_strimwidth( strip_tags( get_the_content() ), 0, 200, '…', 'UTF-8' ); ?></P>
-                                    </div>
-                                </a>
-                                <?php endwhile; ?>
-                            </div>
-                        </div>
-                        <div class="pagenation">
+                        <div class="kanren">
                             <?php
-                                $args = array(
-                                    'mid_size' => 1,
-                                    'prev_text' => '&lt;&lt;prev',
-                                    'next_text' => 'next&gt;&gt;',
-                                    'screen_reader_text' => ' ',
-                                );
-                                the_posts_pagination($args);
-                            ?>
+                            $kanrenpost_no = 5; //表示したい記事数
+                            $categories = get_the_category( $post->ID );
+                            $category_ID = array();
+                            foreach ( $categories as $category ):
+                                array_push( $category_ID, $category->cat_ID );
+                            endforeach;
+                            $args = array(
+                                'post__not_in' => array( $post->ID ),
+                                'posts_per_page' => $kanrenpost_no,
+                                'category__in' => $category_ID,
+                                'orderby' => 'DESC',
+                            );
+                            $st_query = new WP_Query( $args ); ?>
+                        </div>
+                        <div class="posts">
+                            <?php
+                            if ( $st_query->have_posts() ): ?>
+                            <div class="mainvisual">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                    <?php
+                                    while ( $st_query->have_posts() ) : $st_query->the_post(); ?>
+                                    <!-- 実装部分 -->
+                                    <!-- 各スライド -->
+                                        <div class="swiper-slide">
+                                            <ul class="clearfix">
+                                            <?php if ( has_post_thumbnail() ): // サムネイルを持っているときの処理 ?>
+                                                <a href="<?php the_permalink() ?>" class="post-pic"><?php the_post_thumbnail( 'medium' ); ?></a>
+                                                <?php else: // サムネイルを持っていないときの処理 ?>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/no-img.png" alt="no image" title="no image" width="100" height="100" />
+                                                <?php endif; ?>
+                                                <div class="kanren-title">
+                                                    <li>
+                                                        <a href="<?php the_permalink() ?>">
+                                                        <div class="post-category">
+                                                            <?php the_category(' '); ?>
+                                                        </div>
+                                                        <h2 class="post-date"><?php the_time('F.d.Y'); ?></h2>
+                                                        <h1 class="post-title"><?php the_title(); ?></h1>
+                                                        <div class="post-content"><?php echo mb_strimwidth( strip_tags( get_the_content() ), 0, 150, '…', 'UTF-8' ); ?></div>
+                                                        </a>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    <?php endwhile; ?>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <?php else: ?>
+                            <p>関連記事はありませんでした</p>
+                            <?php endif; ?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </div>
                 </div>

@@ -48,35 +48,42 @@
                             <h2 class="single-post-date">
                                 <?php the_time('F.d.Y'); ?>
                             </h2>
-                            <P class="single-post-content">
+                            <div class="single-post-content">
                                 <?php the_content( $more_link_text, $stripteaser ); ?>
-                            </P>
+                            </div>
                         </div>
                         <?php endwhile; ?>
                         <div class="sidebar col-md-3 col-sm-12">
                             <div class="sidebar-title">
                                 <h2>More</h2>
+                                <p>最近の記事</p>
                             </div>
                             <div class="sidebar-contents">
                                 <div class="sidebar-content">
-                                    <ul class="blog-title">
-                                        <?php
-                                            $newposts = array(
-                                                'type' => 'postbypost',
-                                                'limit' => 8
-                                                );
-                                            wp_get_archives($newposts);
-                                        ?>
-                                    </ul>
-                                    <a href="#">
-                                        <img src="images/o1080072014911165029.jpeg" class="side-content-img">
-                                        <div class="side-content-text">
-                                            <h2 class="post-category">イベント</h2>
-                                            <h2 class="post-date">2020.1.30</h2>
-                                            <h1 class="side-post-title">3月31日まで香り＋1点プレゼント(*´ω｀*)</h1>
-                                            <P>現在、この世界に「香り」は数十万種類あると言われています。なんと人類は数千年前から「香り」の持つ効能を扱ってきました。例えば、約2000年前。古代エジプトの…</P>
-                                        </div>
-                                    </a>
+                                <?php query_posts('posts_per_page=5&ignore_sticky_posts=1'); ?>
+                                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                                    <div class="new-entry">
+                                        <div class="new-entry-thumb">
+                                        <?php if ( has_post_thumbnail() ): // サムネイルを持っているときの処理 ?>
+                                            <a href="<?php the_permalink(); ?>" class="new-entry-title"><?php the_post_thumbnail( 'thumb75' ); ?></a>
+                                            <?php else: // サムネイルを持っていないときの処理 ?>
+                                            <a href="<?php the_permalink(); ?>" class="new-entry-title"><img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="NO IMAGE" title="NO IMAGE" height="75" /></a>
+                                            <?php endif; ?>
+                                        </div><!-- /.new-entry-thumb -->
+                                        <div class="new-entry-content">
+                                            <a href="<?php the_permalink(); ?>">
+                                            <div class="side-post-title"><?php the_title(); ?></div>
+                                            <div class="single-post-category">
+                                                <?php the_category(' '); ?>
+                                            </div>
+                                            <h2 class="single-post-date"><?php the_time('F.d.Y'); ?></h2>
+                                            <div class="sidebar-post-content"><?php echo mb_strimwidth( strip_tags( get_the_content() ), 0, 100, '…', 'UTF-8' ); ?></div>
+                                            </a>
+                                        </div><!-- /.new-entry-content -->
+                                    </div><!-- /.new-entry -->
+                                    <?php endwhile; endif; ?>
+                                    <?php wp_reset_query(); ?>
+                                    <br style="clear:both;">
                                 </div>
                             </div>
                             <div class="sidebar-blog-link">
@@ -105,7 +112,15 @@
                 </div>
             </main>
             <div class="return-to-toppage">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">← Back</a>
-                        </div>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">← Back</a>
+            </div>
+            <div class="prev-next">
+                <div class="prev col-md-6">
+                    <?php previous_post_link('%link', '前の記事へ'); ?>
+                </div>
+                <div class="next col-md-6">
+                    <?php next_post_link('%link', '次の記事へ'); ?>
+                </div>
+            </div>
             <?php get_footer(); ?>
         </div>

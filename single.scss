@@ -97,15 +97,14 @@
 
     .single-post-tags {
         margin-bottom: 10px;
-
         a {
+            color: white;
             margin-top: 30px;
-            margin: 10px 0px;
+            margin: 0 0px;
             /* margin-right: 10px; */
             background-color: #b1b190;
             padding: 4px 5px;
             font-size: 11px;
-            color: white;
             font-weight: normal;
             border-radius: 5px;
         }
@@ -114,15 +113,16 @@
     .single-post-date {
         font-weight: normal;
         font-size: 12px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .single-post-title {
         font-size: 20px;
     }
 
-    .single-post-content {
+    .single-post-content p {
         font-size: 18px;
+        line-height: 32px;
     }
 
     .like-btn {
@@ -147,26 +147,25 @@
         margin: 2px 0px 2px 5px;
     }
 
-    .sidebar {
-        padding: 0 70px;
-    }
-
-
     .sidebar-title {
         margin: 50px 0;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
         h2 {
+            font-size: 20px;
             font-weight: normal;
         }
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .sidebar {
+        margin: 5px;
     }
 
     .sidebar-content {
         margin-bottom: 70px;
-        a {
-            color: $base-color;
-        }
     }
 
     .sidebar-content a:hover {
@@ -209,6 +208,12 @@
         img {
             box-shadow: 0 10px 25px 0 rgba(96, 163, 105, 0.5);
         }
+    }
+
+    .prev-next {
+        display: flex;
+        width: 100%;
+        margin: 200px 300px;
     }
 }
 @media (min-width: 768px) {
@@ -291,11 +296,12 @@
         }
     }
     .single-post-category {
+        margin: 5px 0;
         a {
             background-color: #A7D3A5;
-            border-radius: 5px;
-            font-size: 18px;
             color: white;
+            border-radius: 5px;
+            font-size: 14px;
             font-weight: normal;
             padding: 5px 10px;
             width: 20%;
@@ -306,28 +312,25 @@
 
     .single-post-tags {
         display: flex;
-        margin-bottom: 30px;
 
         a {
-            margin-top: 12px;
             margin-right: 10px;
             background-color: #b1b190;
-            padding: 5px 10px;
+            padding: 0 5px;
             font-size: 16px;
             color: white;
-            font-weight: normal;
-            border-radius: 5px;
         }
     }
 
     .single-post-date {
         font-weight: normal;
-        font-size: 18px;
-        margin-bottom: 30px;
+        font-size: 12px;
+        text-align: right;
+        margin: 10px 15px;
     }
 
     .single-post-title {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .single-post-pic img {
@@ -335,7 +338,7 @@
         height: 400px;
     }
 
-    .single-post-content {
+    .single-post-content p {
         font-size: 18px;
     }
     //いいねボタンの色変更
@@ -344,34 +347,31 @@
     //     min-height: 30px;
     //     min-width: 50px;
     // }
-    .sidebar {
-        padding: 0 70px;
-    }
-
 
     .sidebar-title {
         margin: 50px 0;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
         h2 {
             font-weight: normal;
+            font-size: 32px;
+        }
+        p {
+            font-size: 14px;
         }
     }
 
     .sidebar-content {
         margin-bottom: 70px;
-        a {
-            color: $base-color;
-        }
     }
 
-    .sidebar-content a:hover {
-        color: $hover-color;
+    .new-entry {
+        padding: 20px 60px;
     }
 
-    .side-content-img {
+    .new-entry-title img {
         width: 100%;
+        border-radius: 10px;
     }
 
     .side-content-text p {
@@ -379,6 +379,11 @@
     }
 
     .side-post-title {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .sidebar-post-content {
         font-size: 14px;
     }
 
@@ -390,7 +395,7 @@
     .side-blog-link a {
         img {
             width: 55%;
-            height: 85px;
+            height: 95px;
             object-fit: cover;
             border-radius: 50%;
         }
