@@ -35,7 +35,7 @@
                         <h2 class="contents-sub-title">お知らせ</h2>
                         <div class="kanren">
                             <?php
-                            $kanrenpost_no = 5; //表示したい記事数
+                            $kanrenpost_no = 10; //表示したい記事数
                             $categories = get_the_category( $post->ID );
                             $category_ID = array();
                             foreach ( $categories as $category ):
@@ -50,6 +50,7 @@
                             $st_query = new WP_Query( $args ); ?>
                         </div>
                         <div class="posts">
+                        <?php query_posts('posts_per_page=5&ignore_sticky_posts=1'); ?>
                             <?php
                             if ( $st_query->have_posts() ): ?>
                             <div class="mainvisual">
@@ -253,7 +254,7 @@
                     <div class="container">
                         <h1 class="contents-main-title title-location">Location</h1>
                         <h2 class="contents-sub-title">店舗案内</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19809.935064857982!2d-1.1106305670712389!3d51.637095198011735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487694ff7620bdcd%3A0xc78ce9422b99153!2z44Kk44Ku44Oq44K5IOOAkk9YMTAgNkpFIOOCpuOCqeODquODs-ODleOCqeODvOODiSDjg63jg7zjgq8!5e0!3m2!1sja!2sjp!4v1625376580624!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="roke-map"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.892102860781!2d132.7301543152585!3d34.3786644079048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35506e441c781fdb%3A0xab7ae2f50254ec8a!2z5Zyw55CD6ZuR6LKo44KN44O844GP!5e0!3m2!1sja!2sjp!4v1628041077319!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <div class="location-texts">
                             <h1>住所</h1>
                             <p>739-0034<br>広島県東広島市西条町大沢68-1</p>

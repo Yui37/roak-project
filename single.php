@@ -71,14 +71,13 @@
                                             <?php endif; ?>
                                         </div><!-- /.new-entry-thumb -->
                                         <div class="new-entry-content">
-                                            <a href="<?php the_permalink(); ?>">
+                                            <a href="<?php the_permalink(); ?>"></a>
                                             <div class="side-post-title"><?php the_title(); ?></div>
                                             <div class="single-post-category">
                                                 <?php the_category(' '); ?>
                                             </div>
                                             <h2 class="single-post-date"><?php the_time('F.d.Y'); ?></h2>
                                             <div class="sidebar-post-content"><?php echo mb_strimwidth( strip_tags( get_the_content() ), 0, 100, '…', 'UTF-8' ); ?></div>
-                                            </a>
                                         </div><!-- /.new-entry-content -->
                                     </div><!-- /.new-entry -->
                                     <?php endwhile; endif; ?>
@@ -92,7 +91,7 @@
                                         <h2>Blog</h2>
                                     </div>
                                 </div>
-                                <div class="blog-links">
+                                <div class="side-blog-links">
                                     <div class="side-blog-link owner-blog">
                                         <a href="https://ameblo.jp/hanayaginaokazusato22" target="_blank" rel="noopener noreferrer">
                                             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/img004.jpg">
